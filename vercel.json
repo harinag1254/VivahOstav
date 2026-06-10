@@ -1,6 +1,7 @@
 {
-  "buildCommand": "echo 'Static site'",
+  "buildCommand": "echo 'Static HTML deployment'",
   "outputDirectory": ".",
+  "framework": "html",
   "public": true,
   "routes": [
     {
