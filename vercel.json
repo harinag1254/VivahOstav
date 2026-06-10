@@ -1,27 +1,11 @@
 {
-  "buildCommand": "echo 'Static HTML deployment'",
-  "outputDirectory": ".",
   "framework": "html",
-  "public": true,
+  "buildCommand": "echo 'Building'",
+  "outputDirectory": ".",
   "routes": [
     {
       "src": "/(.*)",
       "dest": "/index.html"
-    }
-  ],
-  "headers": [
-    {
-      "source": "/(.*)",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=3600, must-revalidate"
-        },
-        {
-          "key": "X-Content-Type-Options",
-          "value": "nosniff"
-        }
-      ]
     }
   ]
 }
